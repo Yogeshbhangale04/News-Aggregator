@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/ font-awesome.min.css"integrity="sha384-wvfXpqpZZVQGK6TAh5PV1GOFQNHSOD2xbE+QkPXCAF1NEevoEH3S10sibVcOQVNN" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="contactus.css">
+
+    <style>/* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Contact section */
+        .contact {
+            padding: 50px 0;
+        }
+        
+        /* Contact content */
+        .contact .content {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .contact .content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .contact .content p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 0;
+        }
+        
+        /* Contact info */
+        .contactInfo {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .contactInfo .Box {
+            flex: 1;
+            background: #fff;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contactInfo .Box .icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .contactInfo .Box h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .contactInfo .Box p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 0;
+        }
+        
+        /* Contact form */
+        .contactForm {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contactForm h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        
+        .contactForm .inputBox {
+            position: relative;
+            margin-bottom: 30px; /* Increased spacing */
+        }
+        
+        .contactForm .inputBox input,
+        .contactForm .inputBox textarea {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            outline: none;
+            background: transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .contactForm .inputBox input:focus,
+        .contactForm .inputBox textarea:focus {
+            border-bottom: 1px solid #007bff;
+        }
+        
+        .contactForm .inputBox span {
+            position: absolute;
+            left: 0;
+            bottom: 10px;
+            font-size: 18px;
+            color: #666;
+            transition: all 0.3s ease;
+        }
+        
+        .contactForm .inputBox input:focus + span,
+        .contactForm .inputBox textarea:focus + span,
+        .contactForm .inputBox input:valid + span,
+        .contactForm .inputBox textarea:valid + span {
+            bottom: 40px; /* Adjusted bottom position */
+            font-size: 14px;
+            color: #007bff;
+        }
+        .messageBox {
+            margin-bottom: 30px; /* Increased spacing */
+        }
+        
+        .messageBox label {
+            display: block; /* Display label as block */
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .messageBox textarea {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            outline: none;
+            background: transparent;
+            transition: all 0.3s ease;
+            height: 150px; /* Adjusted height */
+            resize: vertical; /* Allow vertical resizing */
+        }
+        
+        .messageBox textarea:focus {
+            border-bottom: 1px solid #007bff;
+        }
+        
+        .messageBox textarea:focus + label,
+        .messageBox textarea:valid + label {
+            color: #007bff;
+        }
+        
+        
+        .contactForm .inputBox input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            color: #fff;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background: #007bff;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .contactForm .inputBox input[type="submit"]:hover {
+            background: #0056b3;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact us</h2>
+            <p>We're here to help. Please reach out to us with any questions, concerns, or feedback.</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="Box">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <!-- <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div> -->
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Sinhgad College of Engineering,<br>Vadgaon bk,pune,<br>411041</p>
+                    </div>
+                </div>
+                <div class="Box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <!-- <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div> -->
+                    
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>504-578-3575</p>
+                    </div>
+                </div>
+                <div class="Box">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <!-- <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div> -->
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>Harvardstark1636@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form method="post" action="'submit_contact_form'">
+                   
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="name" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="messageBox">
+                        <textarea name="message" required="required"></textarea>
+                        <span>Message</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </section>
+</body>
+
+</html>
